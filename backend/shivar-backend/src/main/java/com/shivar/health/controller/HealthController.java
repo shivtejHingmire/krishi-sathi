@@ -1,11 +1,11 @@
-package com.shivar.controller;
+package com.shivar.health.controller;
 
 import com.shivar.common.constants.ApiConstants;
 import com.shivar.common.constants.MessageConstants;
 import com.shivar.common.response.ApiResponse;
 import com.shivar.common.response.ResponseBuilder;
-import com.shivar.dto.response.HealthResponse;
-import com.shivar.service.HealthService;
+import com.shivar.health.dto.HealthResponse;
+import com.shivar.health.service.HealthService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

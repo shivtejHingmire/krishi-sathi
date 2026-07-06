@@ -1,4 +1,4 @@
-package com.shivar.dto.response;
+package com.shivar.health.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

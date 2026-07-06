@@ -1,6 +1,7 @@
-package com.shivar.entity;
+package com.shivar.users.entity;
 
-import com.shivar.enums.UserStatus;
+import com.shivar.entity.BaseEntity;
+import com.shivar.users.enums.UserStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

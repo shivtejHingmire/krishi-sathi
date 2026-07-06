@@ -1,6 +1,6 @@
-package com.shivar.repository;
+package com.shivar.users.repository;
 
-import com.shivar.entity.User;
+import com.shivar.users.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

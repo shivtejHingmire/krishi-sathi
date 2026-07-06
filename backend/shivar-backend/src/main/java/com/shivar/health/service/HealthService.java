@@ -1,6 +1,6 @@
-package com.shivar.service;
+package com.shivar.health.service;
 
-import com.shivar.dto.response.HealthResponse;
+import com.shivar.health.dto.HealthResponse;
 
 public interface HealthService {
 

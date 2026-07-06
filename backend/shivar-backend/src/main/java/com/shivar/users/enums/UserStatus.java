@@ -1,4 +1,4 @@
-package com.shivar.enums;
+package com.shivar.users.enums;
 
 /**
  * Represents the current status of a user account.

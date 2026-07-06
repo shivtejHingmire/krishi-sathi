@@ -1,6 +1,6 @@
-package com.shivar.dto.response;
+package com.shivar.users.dto;
 
-import com.shivar.enums.UserStatus;
+import com.shivar.users.enums.UserStatus;
 import lombok.Getter;
 import lombok.Setter;
 

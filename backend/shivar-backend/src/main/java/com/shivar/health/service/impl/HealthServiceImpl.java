@@ -1,7 +1,7 @@
-package com.shivar.service.impl;
+package com.shivar.health.service.impl;
 
-import com.shivar.dto.response.HealthResponse;
-import com.shivar.service.HealthService;
+import com.shivar.health.dto.HealthResponse;
+import com.shivar.health.service.HealthService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import com.shivar.common.constants.AppConstants;

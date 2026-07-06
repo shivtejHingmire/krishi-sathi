@@ -1,4 +1,4 @@
-package com.shivar.dto.request;
+package com.shivar.users.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
