@@ -4,6 +4,7 @@ import com.shivar.dto.response.HealthResponse;
 import com.shivar.service.HealthService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import com.shivar.common.constants.AppConstants;
 
 @Service
 public class HealthServiceImpl implements HealthService {
@@ -20,7 +21,7 @@ public class HealthServiceImpl implements HealthService {
         return HealthResponse.builder()
                 .application(applicationName)
                 .version(applicationVersion)
-                .status("UP")
+                .status(AppConstants.APPLICATION_STATUS_UP)
                 .build();
     }
 }

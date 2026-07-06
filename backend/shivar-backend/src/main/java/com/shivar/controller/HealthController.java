@@ -1,5 +1,7 @@
 package com.shivar.controller;
 
+import com.shivar.common.constants.ApiConstants;
+import com.shivar.common.constants.MessageConstants;
 import com.shivar.common.response.ApiResponse;
 import com.shivar.common.response.ResponseBuilder;
 import com.shivar.dto.response.HealthResponse;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/health")
+@RequestMapping(ApiConstants.API_V1 + "/health")
 public class HealthController {
 
     private final HealthService healthService;
@@ -25,7 +27,7 @@ public class HealthController {
         HealthResponse response = healthService.getApplicationHealth();
 
         return ResponseEntity.ok(
-                ResponseBuilder.success("Application is running.", response)
+                ResponseBuilder.success(MessageConstants.APPLICATION_RUNNING, response)
         );
     }
 }
