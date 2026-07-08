@@ -36,7 +36,7 @@ public final class ResponseBuilder {
     /**
      * Creates a failed API response.
      */
-    public static ApiResponse<Void> failure(String message) {
+    public static ApiResponse<Void> error(String message) {
 
         return ApiResponse.<Void>builder()
                 .success(false)
@@ -47,7 +47,7 @@ public final class ResponseBuilder {
     /**
      * Creates a failed API response with validation errors.
      */
-    public static ApiResponse<Void> failure(String message, List<String> errors) {
+    public static ApiResponse<Void> error(String message, List<String> errors) {
 
         return ApiResponse.<Void>builder()
                 .success(false)
