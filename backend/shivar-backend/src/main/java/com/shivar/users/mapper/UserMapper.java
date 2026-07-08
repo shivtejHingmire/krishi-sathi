@@ -1,10 +1,12 @@
 package com.shivar.users.mapper;
 
 import com.shivar.users.dto.RegisterUserRequest;
+import com.shivar.users.dto.UpdateUserRequest;
 import com.shivar.users.dto.UserResponse;
 import com.shivar.users.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
 
 import java.util.List;
 
@@ -26,4 +28,7 @@ public interface UserMapper {
     UserResponse toResponse(User user);
 
     List<UserResponse> toResponseList(List<User> users);
+
+    void updateUserFromRequest(UpdateUserRequest request,
+                               @MappingTarget User user);
 }

@@ -1,6 +1,7 @@
 package com.shivar.users.entity;
 
 import com.shivar.entity.BaseEntity;
+import com.shivar.farmer.entity.Farmer;
 import com.shivar.users.enums.UserStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -48,4 +49,7 @@ public class User extends BaseEntity {
 
     @Column(name = "last_login_at")
     private LocalDateTime lastLoginAt;
+
+    @OneToOne(mappedBy = "user")
+    private Farmer farmer;
 }

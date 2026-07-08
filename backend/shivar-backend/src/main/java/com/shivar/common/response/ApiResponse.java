@@ -1,5 +1,6 @@
 package com.shivar.common.response;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,14 +11,14 @@ import java.time.Instant;
 import java.util.List;
 
 @Getter
-@Setter
+@Setter(AccessLevel.PRIVATE)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class ApiResponse<T> {
 
     /**
-     * Indicates whether the API request was successful.
+     * Indicates whether the request was successful.
      */
     private boolean success;
 
@@ -27,18 +28,17 @@ public class ApiResponse<T> {
     private String message;
 
     /**
-     * The actual response payload.
+     * Actual response payload.
      */
     private T data;
 
     /**
-     * List of validation or business errors.
-     * This will be populated only when success is false.
+     * Validation or business errors.
      */
     private List<String> errors;
 
     /**
-     * Time when the response was generated.
+     * Timestamp when the response was generated.
      */
     @Builder.Default
     private Instant timestamp = Instant.now();

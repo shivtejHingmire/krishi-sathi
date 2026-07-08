@@ -39,5 +39,7 @@ public final class MessageConstants {
     public static final String MOBILE_NUMBER_ALREADY_EXISTS = "Mobile number already exists.";
     public static final String EMAIL_ALREADY_EXISTS = "Email already exists.";
     public static final String INVALID_USER_ID = "Invalid user id.";
+    public static final String USER_ACTIVATED_SUCCESS = "User activated successfully.";
+    public static final String USER_BLOCKED_SUCCESS = "User blocked successfully.";
 
 }
